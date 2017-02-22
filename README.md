@@ -8,6 +8,8 @@ This vimrc is based on [amilajack's Awesome vimrc](https://github.com/amix/vimrc
 
 ## Included Plugins
 
+Use [Vundle](https://github.com/VundleVim/Vundle.vim) as Plugin Manager.
+
 * [CSApprox](https://github.com/vim-scripts/CSApprox): Make gvim-only colorschemes work transparently in terminal vim 
 * [The-NERD-tree](): The NERD tree allows you to explore your filesystem and to open files and directories
 * [The-NERD-commenter](https://github.com/vim-scripts/The-NERD-Commenter): A plugin that allows for easy commenting of code for many filetypes, super useful
