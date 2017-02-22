@@ -1,44 +1,28 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
-"       Amir Salihefendic
-"       http://amix.dk - amix@amix.dk
+"       Bin Liu
+"       https://github.com/pkuliubin/vimrc
 "
 " Version: 
-"       5.0 - 29/05/12 15:43:36
-"
-" Blog_post: 
-"       http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
-"
-" Awesome_version:
-"       Get this config, nice color schemes and lots of plugins!
-"
-"       Install the awesome version from:
-"
-"           https://github.com/amix/vimrc
-"
-" Syntax_highlighted:
-"       http://amix.dk/vim/vimrc.html
-"
-" Raw_version: 
-"       http://amix.dk/vim/vimrc.txt
+"       1.0 2017-02-22
 "
 " Sections:
 "    -> General
 "    -> Vundle
-"    -> Editing
+"    -> Coding
 "    -> VIM user interface
 "    -> Colors and Fonts
 "    -> Files and backups
 "    -> Text, tab and indent related
 "    -> Visual mode related
 "    -> Moving around, tabs and buffers
+"    -> Function key mappings
 "    -> Status line
 "    -> Editing mappings
 "    -> vimgrep searching and cope displaying
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
-"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -111,8 +95,9 @@ filetype plugin indent on    " required
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Editing
+" Coding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" supertab configuration
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -290,21 +275,16 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
-" <F1> to use Tagbar
-nmap <silent> <F1> :TagbarToggle<CR><C-L>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Function key mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" <F1> to use NERDTree
+map <F1> :NERDTreeToggle<CR>
+
+" <F4> to use Tagbar
+nmap <silent> <F4> :TagbarToggle<CR><C-L>
 let g:tagbar_ctags_bin='ctags'
 let g:tagbar_width=30
-
-" Explore Manager
-" let g:winManagerWindowLayout='FileExplorer|TagList'
-" map <F1> :Tlist<cr>
-" map <F1> :WMToggle<cr>
-" map <silent><unique> <F3> <Plug>Vm_goto_next_sign
-" map <silent><unique> <C-M> <Plug>Vm_goto_next_sign
-" map <silent><unique> <S-F3> <Plug>Vm_goto_prev_sign
-" map <silent> <unique> <S-M> <Plug>Vm_goto_prev_sign
-
-map <F4> :NERDTreeToggle<CR>
 
 " DoxygenToolkit
 " Auto add author information
@@ -342,14 +322,6 @@ nmap <M-k> mz:m-2<cr>`z
 "vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 "vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vimgrep searching and cope displaying
@@ -399,6 +371,17 @@ map <leader>s? z=
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
+" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.coffee :call DeleteTrailingWS()
+" Define DeleteTrailingWS
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+" End Define DeleteTrailingWS
 
 " Quickly open a buffer for scripbble
 "map <leader>q :e ~/buffer<cr>
