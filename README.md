@@ -1,6 +1,6 @@
 # Vimrc
 
-This vimrc is based on [amilajack's Awesome vimrc](https://github.com/amix/vimrc).
+This vimrc is based on [amilajack's Awesome Vimrc](https://github.com/amix/vimrc).
 
 ## How to install
 
