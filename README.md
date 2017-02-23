@@ -1,7 +1,6 @@
 # Vimrc
 
 This vimrc is based on [amilajack's Awesome Vimrc](https://github.com/amix/vimrc).
-test x
 
 ## How to install
 
