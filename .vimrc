@@ -103,6 +103,14 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" Don't popup docstring window during completion
+autocmd FileType python setlocal completeopt-=preview
+
+" Load rope plugin
+let g:pymode_rope = 0
+
+"let g:jedi#completions_command = "<tab>"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
