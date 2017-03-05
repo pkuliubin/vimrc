@@ -5,12 +5,21 @@ This Vimrc is based on [amilajack's Awesome Vimrc](https://github.com/amix/vimrc
 
 ## How to install
 
-``` python
-@requires_authorization
-def func():
-    pass
+Clone from github
+``` shell
+git clone https://github.com/pkuliubin/vimrc.git ~/vimrc
+```
+Copy `~/vimrc/.vimrc` to `~`
+
+```
+mkdir ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
+Open vim console
+`
+:BundleInstall
+`
 
 ## How to update to latest version
 
