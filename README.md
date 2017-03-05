@@ -5,6 +5,12 @@ This Vimrc is based on [amilajack's Awesome Vimrc](https://github.com/amix/vimrc
 
 ## How to install
 
+``` python
+@requires_authorization
+def func():
+    pass
+```
+
 
 ## How to update to latest version
 
