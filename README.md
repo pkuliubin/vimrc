@@ -16,7 +16,7 @@ $ mkdir ~/.vim/bundle
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-In vim console mode:
+Enter Vim Command mode:
 `
 :BundleInstall
 `
