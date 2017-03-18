@@ -31,7 +31,7 @@ Use [Vundle](https://github.com/VundleVim/Vundle.vim) as Plugin Manager.
 * [The-NERD-tree](): The NERD tree allows you to explore your filesystem and to open files and directories
 * [The-NERD-commenter](https://github.com/vim-scripts/The-NERD-Commenter): A plugin that allows for easy commenting of code for many filetypes, super useful
 * [taglist.vim](https://github.com/vim-scripts/taglist.vim): Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
-* [Tagbar](https://github.com/vim-scripts/Tagbar): Display tags of the current file ordered by scope 
+* [Tagbar](https://github.com/vim-scripts/Tagbar): Display tags of the current file ordered by scope. ctags([Download Source Code](https://sourceforge.net/projects/ctags/files/ctags/)) required.
 * [DoxygenToolkit.vim](https://github.com/vim-scripts/DoxygenToolkit.vim): Simplify Doxygen documentation in C, C++, Python
 * [Auto-Paris](https://github.com/vim-scripts/Auto-Pairs): Insert or delete brackets, parens, quotes in pair
 * [a.vim](https://github.com/vim-scripts/a.vim): Alternate Files quickly (.c --> .h etc) 
