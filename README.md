@@ -9,9 +9,13 @@ Clone from github
 ``` shell
 $ git clone https://github.com/pkuliubin/vimrc.git ~/vimrc
 ```
+
 Copy `~/vimrc/.vimrc` to `~`
-Copy `~/vimrc/colors` to '~/.vim/'
-Copy `~/vimrc/plugin` to '~/.vim/'
+
+Copy `~/vimrc/colors` to `~/.vim/`
+
+Copy `~/vimrc/plugin` to `~/.vim/`
+
 
 ```
 $ mkdir ~/.vim/bundle
