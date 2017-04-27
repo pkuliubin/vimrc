@@ -89,6 +89,12 @@ Bundle 'ervandew/supertab'
 " jedi
 Bundle 'davidhalter/jedi-vim'
 
+" colorscheme
+" desertEx
+"Bundle 'desertEx'
+" molokai
+"Bundle 'molokai'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
