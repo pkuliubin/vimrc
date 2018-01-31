@@ -47,6 +47,7 @@ vim-snipmate default snippets (Previously snipmate-snippets)
 * [ervandew/supertab](https://github.com/ervandew/supertab): 
 Perform all your vim insert mode completions with Tab
 * [davidhalter/jedi-vim](https://github.com/davidhalter/jedi-vim): Using the jedi autocompletion library for VIM. 
+* [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline plugin for Vim
 
 ## Included color schemes
 * desertEx

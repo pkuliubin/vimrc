@@ -87,7 +87,10 @@ Plugin 'honza/vim-snippets'"
 Bundle 'ervandew/supertab'
 
 " jedi
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
+
+" lightline.vim
+Plugin 'itchyny/lightline.vim'
 
 " colorscheme
 " desertEx
