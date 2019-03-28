@@ -53,9 +53,13 @@ Perform all your vim insert mode completions with Tab
 * desertEx
 * molokai
 
-## Included modes
-
 ## Key Mappings
+map leader ","
+map <space> = <C-d>
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 ### Plugin related mappings
 
